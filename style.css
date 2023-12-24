@@ -19,3 +19,13 @@ li {
     border-radius: 5px;
     background-color: #333;
 }
+/* ... (Bagian CSS lainnya tetap sama) */
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color, #333);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--list-background-color, #333);
+    color: var(--list-text-color, #fff);
+}
