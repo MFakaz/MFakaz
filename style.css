@@ -1,10 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
+    background-color: var(--background-color, #f0f0f0);
+    color: var(--text-color, #333);
 }
 
 h1 {
-    color: #fff;
+    color: var(--header-color, #333);
 }
 
 ul {
@@ -14,18 +16,14 @@ ul {
 
 li {
     margin-bottom: 20px;
-    border: 1px solid #333;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #333;
+    border: 1px solid var(--border-color, #ddd);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--list-background-color, #fff);
+    color: var(--list-text-color, #333);
+    transition: background-color 0.3s ease;
 }
-/* ... (Bagian CSS lainnya tetap sama) */
 
-li {
-    margin-bottom: 20px;
-    border: 1px solid var(--border-color, #333);
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--list-background-color, #333);
-    color: var(--list-text-color, #fff);
+li:hover {
+    background-color: var(--list-background-hover, #f5f5f5);
 }
